@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.database.common.entity.DealEntity;
 
 @Repository
-public interface DealRepository extends CrudRepository<DealEntity, Long>, JpaSpecificationExecutor<DealEntity> {
+public interface DealDBRepository extends CrudRepository<DealEntity, Long>, JpaSpecificationExecutor<DealEntity> {
 
 	List<DealEntity> findAllByDealId(Long id);
 }

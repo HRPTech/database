@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @PropertySource("classpath:database.properties")
 @EnableJpaRepositories(basePackages = "com.database.common.repository")
 @EnableTransactionManagement
-@Profile("dev")
+@Profile({"int-test","dev"})
 public class DatabaseConfig {
 
 	@Autowired

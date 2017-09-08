@@ -7,17 +7,17 @@ import org.springframework.data.jpa.domain.Specifications;
 import org.springframework.stereotype.Service;
 
 import com.database.common.entity.DealEntity;
-import com.database.common.repository.DealRepository;
+import com.database.common.repository.DealDBRepository;
 import com.database.common.specification.DealSpecification;
 
 
 @Service
 public class EntityDatabaseServiceImpl implements EntityDatabaseService {
 
-	private DealRepository repo;
+	private DealDBRepository repo;
 	
 	@Autowired
-	public EntityDatabaseServiceImpl(final DealRepository repo) {
+	public EntityDatabaseServiceImpl(final DealDBRepository repo) {
 		this.repo = repo;
 	}
 	
